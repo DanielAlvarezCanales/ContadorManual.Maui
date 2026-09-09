@@ -6,9 +6,8 @@
              BackgroundColor="Aqua"
  >
 
-    <StackLayout 
+    <VerticalStackLayout 
       
-       Orientation="Vertical"
        Spacing="4"
        Margin="16, 5, 16, 5"
        Padding="12">
@@ -56,6 +55,6 @@
            VerticalOptions="End"/>
         </HorizontalStackLayout>
 
-    </StackLayout>
+    </VerticalStackLayout>
 
 </ContentPage>
