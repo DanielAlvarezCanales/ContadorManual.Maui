@@ -25,35 +25,34 @@
        >
 
             <Label
-           Text="10"
+           Text="{Binding Path=Conteo}"
            Margin="16"
            Padding="24"
            HorizontalOptions="Center"
            VerticalOptions="Start"
            FontSize="Large"
-           FontAttributes="Bold"
-           x:Name="LabelConteo"                
+           FontAttributes="Bold"           
            />
 
         </Border>
         <HorizontalStackLayout
            
-        Margin="0,24, 0, 0"
+         Margin="0,24, 0, 0"
           
-       HorizontalOptions="Center"
-       Spacing="36">
+         HorizontalOptions="Center"
+         Spacing="36">
 
-            <Button
-           Clicked="OnContarButton_Clicked"
-           Text="Contar"
-           HorizontalOptions="Start"/>
+           <Button
+            Clicked="OnContarButton_Clicked"
+            Text="Contar"
+            HorizontalOptions="Start"/>
 
-            <Button
-           Clicked="OnReiniciarButton_Clicked"
-           Text="Reiniciar"
-           HorizontalOptions="End"
-           VerticalOptions="End"/>
-        </HorizontalStackLayout>
+           <Button
+            Clicked="OnReiniciarButton_Clicked"
+            Text="Reiniciar"
+            HorizontalOptions="End"
+            VerticalOptions="End"/>
+           </HorizontalStackLayout>
 
     </VerticalStackLayout>
 
