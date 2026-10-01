@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ContadorManual.Maui.Views.MainPage"
              Title="Contador manual"
-             BackgroundColor="Aqua"
+            
  >
 
     <VerticalStackLayout 
@@ -22,11 +22,12 @@
         <Border
         Stroke="Gray"
         StrokeThickness="2"
-       >
+            >
+
 
             <Label
-           Text="{Binding Path=Conteo}"
-           Margin="16"
+             Text="{Binding Path=Conteo}"
+             Margin="16"
            Padding="24"
            HorizontalOptions="Center"
            VerticalOptions="Start"
@@ -35,6 +36,29 @@
            />
 
         </Border>
+
+
+        <HorizontalStackLayout
+            Spacing="8">
+
+            <Label 
+             Text="Incrementar conteo por: "
+             VerticalOptions="Center"/>
+
+            <Entry
+             BackgroundColor="WhiteSmoke"
+             IsReadOnly="True"
+             Text="{Binding Source={x:Reference IncrementoStepper}, Path=Value}"
+                />
+            <Stepper
+             Value="{Binding Path=Incremento}"
+             x:Name="IncrementoStepper"
+             Minimum="1"
+             Increment="1"
+             Maximum="20"/>
+
+        </HorizontalStackLayout>
+
         <HorizontalStackLayout
            
          Margin="0,24, 0, 0"
